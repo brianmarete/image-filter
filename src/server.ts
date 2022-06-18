@@ -34,7 +34,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
           await deleteLocalFiles([filteredpath]);
         }
       });
-    } catch (error: any) {
+    } catch (error) {
       return res.status(500).send(error.message);
     }
       
